@@ -288,3 +288,9 @@ git push                         # Step 9: Push to GitHub
 |-----------|------|----------|
 | **Downstream** ⬇️ | GitHub → Local System | `git clone`, `git pull` |
 | **Upstream** ⬆️ | Local System → GitHub | `git push` |
+
+
+```bash
+How to create branch
+Git checkout -b Salman_ansari
+```-
