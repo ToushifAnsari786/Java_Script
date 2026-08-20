@@ -288,3 +288,22 @@ git push                         # Step 9: Push to GitHub
 |-----------|------|----------|
 | **Downstream** ⬇️ | GitHub → Local System | `git clone`, `git pull` |
 | **Upstream** ⬆️ | Local System → GitHub | `git push` |
+
+---
+
+## Create a New Branch
+
+A branch is a separate line of development in Git. It allows you to work on a feature, bug fix, or experiment without affecting the main branch.
+
+```bash
+git checkout -b Salman_ansari
+```
+
+### Definition
+- `git checkout` = switch to a branch
+- `-b` = create a new branch
+- `Salman_ansari` = name of the new branch
+
+This command creates a new branch named `Salman_ansari` and immediately switches to it.
+
+---
