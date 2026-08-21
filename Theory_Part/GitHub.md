@@ -307,3 +307,71 @@ git checkout -b Salman_ansari
 This command creates a new branch named `Salman_ansari` and immediately switches to it.
 
 ---
+
+## Switch Between Branches Safely
+
+### Check the Current Branch and Branch List
+
+```bash
+git status
+git branch
+```
+
+- `git status` shows the current branch and any uncommitted changes.
+- `git branch` lists local branches. The `*` marks the current branch.
+
+Before switching branches, commit your changes or save them temporarily with
+`git stash`. Uncommitted changes can prevent a switch or be carried into the
+wrong branch.
+
+### Switch to an Existing Branch
+
+```bash
+git checkout branch-name
+```
+
+For newer versions of Git, the clearer command is:
+
+```bash
+git switch branch-name
+```
+
+Replace `branch-name` with the actual branch name, for example
+`git switch Salman_ansari`.
+
+### Create a New Branch from the Latest Main Branch
+
+Use this workflow before starting new work:
+
+```bash
+# 1. Make sure your working directory is clean.
+git status
+
+# 2. Switch to the shared base branch.
+git switch master
+
+# 3. Download and apply the latest changes.
+git pull --ff-only origin master
+
+# 4. Create and switch to the new branch.
+git switch -c feature-name
+```
+
+Replace `master` with `main` if that is the repository's default branch, and
+replace `feature-name` with a descriptive name such as `login-validation`.
+
+`git pull --ff-only` avoids creating an automatic merge commit. If it fails,
+your local base branch and the remote branch have diverged; inspect the
+differences and resolve them deliberately instead of starting work on an
+out-of-date branch.
+
+There is no need to run `git pull origin master` again after creating the new
+branch. The new branch already contains the latest commit from `master`.
+
+### Push the New Branch
+
+After making and committing your changes:
+
+```bash
+git push -u origin feature-name
+```
