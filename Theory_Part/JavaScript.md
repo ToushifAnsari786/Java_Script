@@ -22,4 +22,50 @@ FEATURES OF JAVASCRIPT
    runtime/environment is available.
 8. JavaScript follows the WORA principle:
    WORA = Write Once, Run Anywhere.
+9. In JavaScript there no compailer to do compilation, both compilation and line by line execution will heppen thore interpretor only 
+10. any programming language which uses just the interpretor known as Scripting language 
+11. JavaScript is synchronous in nature 
 
+Synchronous:- JavaScript is execute line by line but JS engine will not wait untile the task is going to complete 
+
+12. Is is a lossly typed language 
+A.It is a programmares friendly language 
+B. data type , return type is not required 
+
+13. JS can be writting in simple english
+
+
+Difference between java and javaScript
+
+     Java                         |            JavaScripte
+
+1. uses both compiler and interpetor  |    uses only interpetor
+2. can be used only  at the backend   |  can be used both backend and forntend
+3. java is strictly typed language     | lossly typed language
+4. java is AcySynchronous language     |  Synchronous language
+5. oops concpet                     |     object based language
+
+\n in JavaScript
+In JavaScript, \n is an escape sequence used to create a new line.
+
+Example:
+console.log("Hello\nWorld");
+
+Output:
+Hello
+World
+
+Simple definition:
+\n is used in JavaScript to move the next text to a new line.
+
+\t in JavaScript
+In JavaScript, \t is an escape sequence used to insert a tab space.
+
+Example:
+console.log("Hello\tWorld");
+
+Output:
+Hello   World
+
+Simple definition:
+\t is used in JavaScript to insert a tab space between text.
